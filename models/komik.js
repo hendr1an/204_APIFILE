@@ -18,7 +18,9 @@ module.exports = (sequelize, DataTypes) => {
     imageType : DataTypes.STRING,
     imageName : DataTypes.STRING,
     imageData : DataTypes.BLOB('long'),
-  }, {
+  },
+  
+  {
     
   });
   return Komik;
