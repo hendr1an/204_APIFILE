@@ -4,6 +4,7 @@ const multer = require('multer');
 const komikController = require('../controllers/komikController');
 const upload = multer({ storage: multer.memoryStorage() });
 
+
 router.post('/komik', upload.single('gambar'), komikController.createKomik);
 router.get('/komik', komikController.getAllKomik);
 router.get('/komik/:id', komikController.getKomikById);
